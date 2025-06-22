@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Автомобильные шины - 2025</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Автомобильные шины</h1>
+            <p>Все для вашего автомобиля - 2025</p>
+            <nav>
+                <ul>
+                    <li><a href="#main">Главная</a></li>
+                    <li><a href="#apps">Наши приложения</a></li>
+                    <li><a href="#about">О нас</a></li>
+                    <li><a href="#contacts">Контакты</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="main">
+            <h2>Добро пожаловать!</h2>
+            <p>Мы предлагаем широкий ассортимент автомобильных шин для любого сезона и стиля вождения.</p>
+        </section>
+
+        <section id="apps">
+            <h2>Наши приложения</h2>
+            
+            <article class="app-card">
+                <h3>Шины Pro 2025 (Windows)</h3>
+                <p>Десктопное приложение для подбора автомобильных шин:</p>
+                <ul>
+                    <li>Подбор шин по параметрам автомобиля</li>
+                    <li>Сравнение моделей и производителей</li>
+                    <li>Рекомендации по сезонности</li>
+                    <li>Анализ цен и скидок</li>
+                </ul>
+                <a href="#" class="download-btn">Скачать для Windows</a>
+            </article>
+
+            <article class="app-card">
+                <h3>Шины Mobile 2025 (Android)</h3>
+                <p>Мобильное приложение для работы с автомобильными шинами:</p>
+                <ul>
+                    <li>Поиск шин по параметрам</li>
+                    <li>Сканирование штрих-кодов</li>
+                    <li>Интеграция с сервисами шиномонтажа</li>
+                    <li>Напоминания о сезонной замене</li>
+                </ul>
+                <div class="warning">
+                    <p>Внимание! Для установки разрешите "Неизвестные источники" в настройках Android</p>
+                </div>
+                <a href="#" class="download-btn">Скачать для Android</a>
+            </article>
+        </section>
+
+        <section id="contacts">
+            <h2>Разработчик</h2>
+            <p>Иванов Иван Иванович</p>
+            <p>Группа ИС-932</p>
+            <p>Email: example@email.com</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 Все права защищены</p>
+        </div>
+    </footer>
+</body>
+</html>
