@@ -1,76 +1,123 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Автомобильные шины - 2025</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Автомобильные шины</h1>
-            <p>Все для вашего автомобиля - 2025</p>
-            <nav>
-                <ul>
-                    <li><a href="#main">Главная</a></li>
-                    <li><a href="#apps">Наши приложения</a></li>
-                    <li><a href="#about">О нас</a></li>
-                    <li><a href="#contacts">Контакты</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+/* Общие стили */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
 
-    <main class="container">
-        <section id="main">
-            <h2>Добро пожаловать!</h2>
-            <p>Мы предлагаем широкий ассортимент автомобильных шин для любого сезона и стиля вождения.</p>
-        </section>
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
 
-        <section id="apps">
-            <h2>Наши приложения</h2>
-            
-            <article class="app-card">
-                <h3>Шины Pro 2025 (Windows)</h3>
-                <p>Десктопное приложение для подбора автомобильных шин:</p>
-                <ul>
-                    <li>Подбор шин по параметрам автомобиля</li>
-                    <li>Сравнение моделей и производителей</li>
-                    <li>Рекомендации по сезонности</li>
-                    <li>Анализ цен и скидок</li>
-                </ul>
-                <a href="#" class="download-btn">Скачать для Windows</a>
-            </article>
+/* Шапка */
+header {
+    background-color: #1a3e72;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
 
-            <article class="app-card">
-                <h3>Шины Mobile 2025 (Android)</h3>
-                <p>Мобильное приложение для работы с автомобильными шинами:</p>
-                <ul>
-                    <li>Поиск шин по параметрам</li>
-                    <li>Сканирование штрих-кодов</li>
-                    <li>Интеграция с сервисами шиномонтажа</li>
-                    <li>Напоминания о сезонной замене</li>
-                </ul>
-                <div class="warning">
-                    <p>Внимание! Для установки разрешите "Неизвестные источники" в настройках Android</p>
-                </div>
-                <a href="#" class="download-btn">Скачать для Android</a>
-            </article>
-        </section>
+    header h1 {
+        margin: 0;
+        font-size: 2.5rem;
+    }
 
-        <section id="contacts">
-            <h2>Разработчик</h2>
-            <p>Иванов Иван Иванович</p>
-            <p>Группа ИС-932</p>
-            <p>Email: example@email.com</p>
-        </section>
-    </main>
+    header p {
+        margin: 10px 0 20px;
+        font-size: 1.2rem;
+    }
 
-    <footer>
-        <div class="container">
-            <p>© 2025 Все права защищены</p>
-        </div>
-    </footer>
-</body>
-</html>
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+    nav a:hover {
+        text-decoration: underline;
+    }
+
+/* Основное содержимое */
+main {
+    padding: 40px 0;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #1a3e72;
+    border-bottom: 2px solid #1a3e72;
+    padding-bottom: 10px;
+}
+
+.app-card {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 30px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+    .app-card h3 {
+        color: #1a3e72;
+        margin-top: 0;
+    }
+
+.warning {
+    background-color: #fff3cd;
+    color: #856404;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+/* Кнопки */
+.download-btn {
+    display: inline-block;
+    background-color: #1a3e72;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+    .download-btn:hover {
+        background-color: #0d2b57;
+    }
+
+/* Подвал */
+footer {
+    background-color: #1a3e72;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+}

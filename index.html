@@ -4,13 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Автомобильные шины 2025</title>
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- Подключение шрифтов Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
+        /* Основные настройки шрифтов */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
             margin: 0;
             padding: 0;
             line-height: 1.6;
             color: #333;
+            background-color: #f5f5f5;
         }
 
         .container {
@@ -20,26 +28,32 @@
             padding: 20px 0;
         }
 
+        /* Шапка с новым шрифтом */
         header {
-            background-color: #2c3e50;
+            background-color: #9932CC;
             color: white;
-            padding: 20px 0;
+            padding: 25px 0;
             text-align: center;
+            font-family: 'Montserrat', sans-serif;
         }
 
-        h1 {
-            margin: 0;
-            font-size: 28px;
-        }
+            header h1 {
+                margin: 0;
+                font-size: 2.2rem;
+                font-weight: 700;
+                letter-spacing: 0.5px;
+            }
 
         .subtitle {
-            font-size: 18px;
+            font-size: 1.1rem;
             margin: 10px 0 20px;
+            font-weight: 400;
         }
 
+        /* Навигация */
         nav {
-            background-color: #34495e;
-            padding: 10px 0;
+            background-color: #4B0082;
+            padding: 12px 0;
         }
 
             nav ul {
@@ -57,52 +71,110 @@
             nav a {
                 color: white;
                 text-decoration: none;
-                font-weight: bold;
+                font-weight: 500;
+                font-size: 1.05rem;
+                font-family: 'Montserrat', sans-serif;
+                transition: opacity 0.3s;
             }
 
+                nav a:hover {
+                    opacity: 0.8;
+                }
+
+        /* Заголовки */
         h2 {
-            color: #2c3e50;
-            border-bottom: 2px solid #2c3e50;
-            padding-bottom: 5px;
+            color: #4B0082;
+            border-bottom: 2px solid #4B0082;
+            padding-bottom: 8px;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.8rem;
+            margin-top: 30px;
         }
 
+        /* Карточки приложений */
         .app-card {
             margin: 30px 0;
-            padding: 20px;
-            background-color: #f9f9f9;
-            border-radius: 5px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
         }
 
         .app-title {
-            color: #2c3e50;
+            color: #4B0082;
             margin-top: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600;
+            font-size: 1.5rem;
         }
 
+        .app-card p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+        }
+
+        .app-card ul {
+            padding-left: 20px;
+            font-size: 1rem;
+        }
+
+        .app-card li {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+
+        /* Кнопки */
         .download-btn {
             display: inline-block;
-            background-color: #e74c3c;
+            background-color: #9400D3;
             color: white;
-            padding: 8px 15px;
+            padding: 10px 20px;
             text-decoration: none;
-            border-radius: 4px;
-            font-weight: bold;
-            margin-top: 10px;
+            border-radius: 5px;
+            font-weight: 500;
+            margin-top: 15px;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1rem;
+            transition: background-color 0.3s;
         }
 
+            .download-btn:hover {
+                background-color: #7B00B8;
+            }
+
+        /* Предупреждение */
         .warning {
-            background-color: #fcf8e3;
-            color: #8a6d3b;
-            padding: 10px;
+            background-color: #E6E6FA;
+            color: #4B0082;
+            padding: 12px;
             border-radius: 4px;
-            margin: 15px 0;
-            border-left: 3px solid #faebcc;
+            margin: 20px 0;
+            border-left: 4px solid #9932CC;
+            font-size: 0.95rem;
         }
 
+        /* Подвал */
         footer {
-            background-color: #2c3e50;
+            background-color: #4B0082;
             color: white;
-            padding: 20px 0;
+            padding: 25px 0;
             text-align: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .developer-info {
+            margin: 20px 0;
+            line-height: 1.7;
+        }
+
+            .developer-info p {
+                margin: 5px 0;
+            }
+
+        footer small {
+            font-size: 0.9rem;
+            opacity: 0.9;
         }
 
         hr {
@@ -112,8 +184,20 @@
             margin: 30px 0;
         }
 
-        .developer-info {
-            margin: 20px 0;
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            .app-card {
+                padding: 20px;
+            }
         }
     </style>
 </head>
